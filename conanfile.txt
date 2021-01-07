@@ -1,0 +1,21 @@
+[requires]
+spdlog/1.8.2                        
+docopt.cpp/0.6.3 
+yaml-cpp/0.6.3
+sol2/3.2.3
+nlohmann_json/3.9.1
+
+[options]
+
+[generators]
+cmake
+
+[imports]
+bin, *.dll -> ./bin
+lib, *.dylib* -> ./bin
+
+[build_requires]
+nlohmann_json/3.9.1
+gtest/1.10.0
+spdlog/1.8.2
+
