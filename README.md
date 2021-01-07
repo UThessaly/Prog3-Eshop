@@ -43,8 +43,9 @@ EShop Usage
 Example of starting the EShop with 100 users (100 forks), 500 items, 
 with the Include files being in "hello" and User Script Files being in "world"
 
+```bash
 better_eshop --users=100 --items=500 --scripts=world --include=hello 
-
+```
 ## Building
 
 To build the Eshop, a couple of programs will be needed:
