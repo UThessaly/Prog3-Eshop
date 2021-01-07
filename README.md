@@ -1,5 +1,50 @@
 # Basic Piped Shop
 
+- [Basic Piped Shop](#basic-piped-shop)
+  - [Usage](#usage)
+  - [Building](#building)
+    - [Installing Conan](#installing-conan)
+    - [Installing CMake](#installing-cmake)
+    - [Building the program](#building-the-program)
+    - [Building using Docker](#building-using-docker)
+  - [How the program works](#how-the-program-works)
+    - [Pipes](#pipes)
+      - [JSON](#json)
+    - [Lua Scripts](#lua-scripts)
+      - [Sol3](#sol3)
+    - [DocOpt](#docopt)
+    - [SpdLog](#spdlog)
+
+## Usage
+
+```
+EShop Usage
+    Usage:
+      better_eshop [options]
+      better_eshop (-h | --help)
+      better_eshop --version
+
+    Options:
+      -h --help               Show this screen.
+      --version               Show version.
+      -i --include=<dir>      The Directory to Include in the Lua Scripts [default: ./LuaIncludes].
+      --items=<amount>        How many items to generate [default: 100].
+      --users=<amount>        How many users to create (forks) [default: 50].
+      --scripts=<dir>         The Directory of the User Lua Scripts to Run
+                              One of these scripts will be chosen at random
+                              to be executed. This will allow the Users to have
+                              different characteristics such as:
+                              - A user who buys anything at random
+                              - A user who buys only when it's the last item
+                              - etc
+                              [default: ./Users]
+```
+
+Example of starting the EShop with 100 users (100 forks), 500 items, 
+with the Include files being in "hello" and User Script Files being in "world"
+
+better_eshop --users=100 --items=500 --scripts=world --include=hello 
+
 ## Building
 
 To build the Eshop, a couple of programs will be needed:

@@ -33,4 +33,5 @@ while true do
     end
 
     ::continue::
+    shop.sleep(3)
 end

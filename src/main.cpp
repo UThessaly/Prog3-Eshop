@@ -380,9 +380,9 @@ void Parent(Shop &shop, vector<Child> children)
 constexpr static char USAGE[] = R"(
 EShop Usage
     Usage:
-      Luafy [options]
-      Luafy (-h | --help)
-      Luafy --version
+      better_eshop [options]
+      better_eshop (-h | --help)
+      better_eshop --version
 
     Options:
       -h --help               Show this screen.

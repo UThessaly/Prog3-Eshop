@@ -17,5 +17,5 @@ while true do
         log("Error: " .. bought .. " when trying to buy product " .. items[item_to_buy].name)
     end
 
-    shop.sleep(2)
+    shop.sleep(1)
 end
