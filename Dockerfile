@@ -29,8 +29,6 @@ USER root
 
 ENV DEBIAN_FRONTEND noninteractive
 
-RUN apt-get update && apt-get install luarocks -y && rm -rf /var/lib/apt/lists/*
-
 # USER app
 
 WORKDIR /usr/app
